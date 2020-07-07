@@ -1,0 +1,98 @@
+/* ref  https://cssgradient.io/ 
+        https://www.cssmatic.com/box-shadow */
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  outline: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: lightgray;
+  text-align: center;
+}
+
+.list {
+  width: 400px;
+  margin: auto;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.items {
+  margin: 0;
+  height: 500px;
+  overflow-y: auto;
+  background-color: rgb(236, 236, 236);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.item__devider {
+  width: 90%;
+  height: 1px;
+  background-color: lightgray;
+  margin: auto;
+}
+
+.item__delete {
+  font-size: 16px;
+  transition: all 0.2s ease-in;
+}
+
+.item__delete:hover {
+  color: red;
+}
+
+.header {
+  font-size: 24px;
+  color: white;
+  padding: 10px 0;
+  background: rgb(207, 153, 202);
+  background: linear-gradient(337deg, rgba(207, 153, 202, 1) 28%, rgba(145, 204, 219, 1) 94%);
+  border-radius: 10px 10px 0 0;
+}
+
+.footer {
+  background: rgb(207, 153, 202);
+  background: linear-gradient(337deg, rgba(207, 153, 202, 1) 28%, rgba(145, 204, 219, 1) 94%);
+  border-radius: 0 0 10px 10px;
+}
+
+.footer__input {
+  width: 100%;
+  height: 32px;
+  border: none;
+  padding: 0 10px;
+  outline: none;
+}
+
+.footer__btn {
+  margin: 10px 0;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in;
+}
+
+.footer__btn:hover {
+  transform: scale(1.1);
+}
